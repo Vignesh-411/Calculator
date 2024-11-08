@@ -1,0 +1,137 @@
+body {
+    background-image: url("https://media.istockphoto.com/id/1419844586/vector/stem-blue-horizontal-frame-vector-education-bright-illustration.jpg?s=612x612&w=0&k=20&c=-A1eYLYulujNsiM26lkVy7qMT_Hp82N5EtKHSFRmigk=");
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.calculator {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 40px;
+    height: 620px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+  }
+  
+  .display {
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    margin-top: -30px;
+    color: white;
+    font-size: 2.7rem;
+    text-align: right;
+    border-radius: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 60px); 
+    gap: 25px;
+    margin-top: 75px;
+    width: 100%;
+  }
+  
+  button {
+    font-size: 2rem;
+    background-color: #4a2781;
+    color: white;
+    border: none;
+    border-radius: 130px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 25px;
+  }
+  
+  button:hover {
+    background-color: #3d1e70;
+  }
+  
+  /* Special buttons: AC and DEL */
+  button:nth-child(1),
+  button:nth-child(2) {
+    background-color: #d9534f;
+  }
+  
+  button:nth-child(1):hover,
+  button:nth-child(2):hover {
+    background-color: #c9302c;
+  }
+  
+  /* Equal button styling */
+  .equal-button {
+    grid-column: span 4;
+    background-color: #4a2781;
+    height: 60px;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 130px;
+  }
+  
+  .equal-button:hover {
+    background-color: #3d1e70;
+  }
+  
+  /* Mode toggle button styling */
+  .mode-toggle {
+    position: absolute;
+    top: 110px;
+    width: 100%;
+
+  }
+  
+  .mode-toggle button {
+    grid-column: span 4;
+    background-color: #4a2781;
+    height: 60px;
+    width: 88%;
+    font-size: 2rem;
+    border-radius: 130px;
+  }
+  
+  .mode-toggle button:hover {
+    background-color: #3d1e70;
+  }
+  
+
+
+/* Adjust button size for scientific mode */
+.scientific-mode .buttons button {
+padding:20px;
+font-size: 1rem;
+}
+
+.scientific-mode .buttons {
+gap: 10px;
+margin-top: 75px;
+width: 90%;
+margin-right: 100px;
+}
+
+.scientific-mode .equal-button {
+ margin-left: 102%;
+ width: 18%;
+ font-size: 3rem; 
+ height: 480px;
+ margin-top: -90%;
+ border-radius: 10px;
+}
+
+.scientific-mode .mode-toggle {
+  top: 110px;
+  width: 107%;
+}
+
